@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Analisador</title>
+    <link rel="stylesheet" href="./analisador.css">
+</head>
+<body>
+    <header>
+        <h1>Analisador de Números</h1>
+    </header>
+    <section>
+       <div class="numInput">
+           <label for="numInput">Digite um número entre 0 e 100</label>
+           <input type="number" id="numInput">
+           <button type="submit" onclick="addNums()">Enviar</button>
+       </div>
+       <div class="result">
+           <div class="numList">
+               <select id="numList" size="5"></select>
+           </div>
+           <div id="numText"></div>
+       </div>
+       <button id="numEnd" onclick="viewNums()">Finalizar</button>
+    </section>
+    <footer>
+        <p>&copy; Weverton Bruno</p>
+    </footer>
+    <script src="./analisador.js"></script>
+</body>
+</html>

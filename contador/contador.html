@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contador</title>
+    <link rel="stylesheet" href="./contador.css">
+</head>
+<body>
+    <header>
+        <h1>Contador</h1>
+    </header>
+    <section>
+        <div id="counter">
+            <label for="start">
+                Inicio
+                <Input type="number" id="start"></Input>
+            </label>
+            <label for="end">
+                Fim
+                <input type="number" id="end">
+            </label>
+            <label for="pass">
+                Passo
+                <input type="number" id="pass">
+            </label>
+            <button onclick="tabCounter()">Contar</button>
+        </div>
+        <div id="result">
+            Digite os valores para contagem
+        </div>
+    </section>
+    <footer>
+        <p>&copy; Weverton Bruno</p>
+    </footer>
+    <script src="./contador.js"></script>
+</body>
+</html>
