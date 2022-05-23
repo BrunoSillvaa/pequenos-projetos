@@ -1,6 +1,18 @@
 # Pequenos projetos utilizando HTML5, CSS3 e JavaScript
 Projetos que desenvolvi para aperfeiçoar minhas habilidades no desenvolvimento web e me tornar um programador front end melhor.
 
+## Analisador de Números 📊
+Um programa que solicita números de zero a cem, os armazena em um array e por fim mostra algums dados sobre eles, como:
+- A quantidade de número adicionados
+- O menor número
+- A soma de todos os números
+- A média dos valores
+(No caso de tentar adicionar números negativos ou maiores que cem é mostrado uma mensagem de erro ao usuário, tambem é validado a tentativa de ver as estatisticas se ainda não tiver nenhum número adicionado )
+
+![anali](https://user-images.githubusercontent.com/102771408/169725244-9afbc9e2-520d-4c6e-926d-58da5de05a54.png)
+![anlisa](https://user-images.githubusercontent.com/102771408/169725249-45dff640-9268-4fdf-8c26-3231255e35d4.png)
+
+
 ## Tabuada ✖️
 
 Um simples programa que solicita um número ao usuario e exibe os valores da tabuada até o dez dele
