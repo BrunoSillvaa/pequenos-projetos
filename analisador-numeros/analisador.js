@@ -2,7 +2,7 @@
 var numInputTxt = document.querySelector("input#numInput")
 var numList = document.querySelector("select#numList")
 var numText = document.querySelector("div#numText")
-var numsArray = [100, 92, 90, 70]
+var numsArray = []
 
 // Função de verificar se o número já está no array
 function inList(num, list) {
@@ -71,8 +71,8 @@ function viewNums() {
     numText.innerHTML = ""
 
     numText.innerHTML += `<p>Foram adicionados ${numsArray.length} números a lista</p>`
-    numText.innerHTML += `<p>O maior número informado foi ${numsHigh(numsArray)}</p>`
+    numText.innerHTML += `<p>O maior número informado foi o ${numsHigh(numsArray)}</p>`
     numText.innerHTML += `<p>A soma de todos os números foi de ${sumList(numsArray)}</p>`
-    numText.innerHTML += `<p>A media dos valores foi de ${calMedia(numsArray)}</p>`
+    numText.innerHTML += `<p>A média dos valores foi de ${calMedia(numsArray)}</p>`
     }
 }
