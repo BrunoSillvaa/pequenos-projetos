@@ -2,7 +2,7 @@
 var numInputTxt = document.querySelector("input#numInput")
 var numList = document.querySelector("select#numList")
 var numText = document.querySelector("div#numText")
-var numsArray = [12, 60, 4, 9, 2, 20]
+var numsArray = [100, 92, 90, 70]
 
 // Função de verificar se o número já está no array
 function inList(num, list) {
@@ -15,9 +15,12 @@ function inList(num, list) {
 
 // Função de verificar o maior número 
 function numsHigh(list) {
-    list.sort()
-    numHigh = list[list.length - 1]
-    return numHigh
+    big = 0
+    for (var num in list) {
+        if (list[num] > big) {
+            big = list[num]
+        } 
+    } return big
 }
 
 // Função de somar os números
@@ -53,17 +56,23 @@ function addNums() {
         item.innerText = `${numInput}`
         numList.appendChild(item)
     }
+    // Limpa o input e as estatisticas
+    numText.innerHTML = ""
+    numInputTxt.value = ""
+    numInputTxt.focus()
 }
 
 // Função de ver as estatisticas
 function viewNums() {
-    // Ordena o array
-    numsArray.sort();
+    if (numsArray.length == 0) {
+        window.alert("Nenhum número adicionado ainda")
+    } else {
     // Limpa as estatisticas
     numText.innerHTML = ""
 
     numText.innerHTML += `<p>Foram adicionados ${numsArray.length} números a lista</p>`
-    numText.innerHTML += `<p>O maior número informado foi ${numsArray[numsArray.length-1]}</p>`
+    numText.innerHTML += `<p>O maior número informado foi ${numsHigh(numsArray)}</p>`
     numText.innerHTML += `<p>A soma de todos os números foi de ${sumList(numsArray)}</p>`
     numText.innerHTML += `<p>A media dos valores foi de ${calMedia(numsArray)}</p>`
+    }
 }
