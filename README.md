@@ -30,3 +30,7 @@ Um programa que faz três solicitações de números ao usuario:
 ![contador](https://user-images.githubusercontent.com/102771408/169684236-a2b994e8-0aee-4df1-a6a4-5248d190f4db.png)
 ![tempsnip2](https://user-images.githubusercontent.com/102771408/169684510-b32b5d21-3868-42e7-a606-89152e0568e6.png)
 
+## Lista de Tarefas
+Uma lista de tarefas onde é possivel adicionar novas tarefas ou resetar a lista
+
+![tempsnip](https://user-images.githubusercontent.com/102771408/169944137-bb62c05a-ac83-4f2b-b929-461efa6b33c2.png)
